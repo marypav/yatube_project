@@ -1,3 +1,4 @@
+# posts/views.py
 from django.http import HttpResponse
 
 
@@ -10,5 +11,5 @@ def post_list(request):
 
 
 # В урл мы ждем парметр, и нужно его прередать в функцию для использования
-def group_posts(request, pk):
-    return HttpResponse(f'Пост номер {pk}')
+def group_posts(request, slug):
+    return HttpResponse(f'Пост номер {slug}')
